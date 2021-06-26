@@ -1,0 +1,30 @@
+.btn {
+    background: #D87D4A;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    transition: 300ms ease all;
+    &:hover {
+        background: #FBAF85;
+    }
+}
+.product-btn {
+    background: #000;
+    &:hover {
+        background: #4C4C4C;
+    }
+}
+.product-btn-2 {
+    color: #000;
+    background: inherit;
+    border: 1px solid #000;
+    &:hover {
+        background: #000;
+        color: #fff;
+    }
+}

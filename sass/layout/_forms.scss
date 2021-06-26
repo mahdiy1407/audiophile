@@ -1,0 +1,273 @@
+.shop-box {
+    display: flex;
+    @include respond(tab-land) {
+        justify-content: center;
+    }
+}
+.main__shop-list {
+    display: flex;
+    width: 111rem;
+    justify-content: space-between;
+    @include resetlist;
+    @include respond(tab-land) {
+        width: 69rem;
+    }
+    @include respond(phone) {
+        width: 32.7rem;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.shop-item {
+    width: 35rem;
+    height: 28.4rem;
+    text-align: center;
+    background: linear-gradient(#fff 8rem, #f1f1f1 8rem);
+    position: relative;
+    @include respond(tab-land) {
+        width: 22.3rem;
+    }
+    @include respond(phone) {
+        width: 32.7rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.shop-img {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.shop-section {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    &::before {
+        @include baElements (122px, 18px);
+        background: #000000;
+        border-radius: 50%;
+        filter: blur(15px);
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.shop-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+    @include respond(tab-land) {
+        font-size: 15px;
+    }
+}
+.shop-link {
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    position: relative;
+    transition: 300ms ease all;
+    &::after {
+        @include baImages(8px, 12px, "../images/path.svg");
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+    }
+    &:hover {
+        color: #D87D4A;
+    }
+}
+.main__product {
+    display: flex;
+    justify-content: flex-end;
+    width: 111rem;
+    height: 56rem;
+    background-color: #D87D4A;
+    color: #fff;
+    align-items: center;
+    border-radius: .8rem;
+    background-image: url(../images/speaker-big.png), url(../images/disk.png);
+    background-repeat: no-repeat;
+    background-position: 118px 96px, top left;
+    margin-top: 16.8rem;
+    @include respond(tab-land) {
+        width: 67rem;
+        height: 72rem;
+        text-align: center;
+        justify-content: center;
+        background-image: url(../images/ZX9-SPEAKER-mid.png), url(../images/disk-mid.png);
+        background-position: center top;
+    }
+    @include respond(phone) {
+        width: 32.7rem;
+        background-image: url(../images/ZX9-SPEAKER-mid.png), url(../../images/diskphone.png);
+    }
+}
+.product-section {
+    margin-right: 9.5rem;
+    @include respond(tab-land) {
+        margin-right: 0;
+        margin-top: 35.2rem;
+    }
+}
+.product-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 58px;
+}
+.product-des {
+    width: 34.9rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 5.5rem;
+    margin-top: 2.4rem;
+}
+.main__product-2 {
+    width: 111rem;
+    height: 32rem;
+    background-image: url(../images/speaker-bg.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 4.8rem;
+    border-radius: .8rem;
+    @include respond(tab-land) {
+        background-image: url(../images/speaker-bg-mid.png);
+        width: 67rem;
+    }
+    @include respond(phone) {
+        background-image: url(../../images/ZX7-SPEAKER-phone.png);
+        width: 32.7rem;
+    }
+}
+.product-section-2 {
+    margin-left: 9.5rem;
+    @include respond(tab-land){
+        margin-left: 6rem;
+    }
+    @include respond(phone) {
+        margin-left: 2.4rem;
+    }
+}
+.product-title-2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 4.7rem;
+}
+.main__product-3 {
+    width: 111rem;
+    padding: 0;
+    margin-top: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../images/EARPHONES-bg.png);
+    background-repeat: no-repeat;
+    @include respond(tab-land) {
+        width: 67rem;
+        background-image: url(../images/earphone-box-mid.png);
+    }
+    @include respond(phone) {
+        background-image: url(../../images/YX1-EARPHONES-phone.png);
+        
+        width: 32.7rem;
+        height: 42.4rem;
+        display: block;
+        padding-top: 22.4rem;
+    }
+}
+.product-bg {
+    width: 54rem;
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    background: #F1F1F1;
+    border-radius: .8rem;
+    @include respond(tab-land) {
+        width: 34rem;
+    }
+    @include respond(phone) {
+        width: 32.7rem;
+        height: 20rem;
+    } 
+}
+.product-bg__section {
+    margin-left: 9.5rem;
+    @include respond(tab-land){
+        margin-left: 4rem;
+    }
+}
+.ads-box {
+    width: 111rem;
+    height: 58.8rem;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: 20rem;
+    background-image: url(../images/guy.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    @include respond(tab-land) {
+        background-image: url(../images/guy-mid.png);
+        background-position: top;
+        text-align: center;
+        width: 67rem;
+        height: 63.3rem;    
+        justify-content: center;
+        align-items: flex-end;
+    }
+    @include respond(phone) {
+        background-image: url(../../images/guy-phone.png);
+        width: 32.7rem;
+        height: 70rem;
+    }
+}
+.ads-box__title {
+    width: 40rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 3.2rem;
+    @include respond(tab-land) {
+        width: 57.3rem;
+    }
+    @include respond(phone) {
+        font-size: 2.8rem;
+        width: 32.7rem;
+    }
+}
+.ads-box__span {
+    color: #D87D4A;
+}
+.ads-box__des {
+    width: 42.5rem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+    @include respond(tab-land) {
+        width: 57.3rem;
+    }
+    @include respond(phone) {
+        width: 32.7rem;
+    }
+}
+.ads-box__img {
+    border-radius: .8rem;
+}

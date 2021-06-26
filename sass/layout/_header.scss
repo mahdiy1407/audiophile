@@ -1,0 +1,66 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #979797 solid 1px;
+    padding-top: 3.2rem;
+    padding-bottom: 3.6rem;
+    position: relative;
+    @include respond(tab-land) {
+        width: 68.9rem;
+    }
+    @include respond(phone) {
+        width: 37.5rem;
+    }
+}
+.header__box {
+    background: #101010;
+    height: 75.7rem;
+    margin-bottom: 12rem;
+    @include respond(tab-land) {
+        width: 100%;
+    }
+}
+.header__container {
+    color: #fff;
+    height: 63.2rem;
+    background: url(../../images/headphone_bg.png) no-repeat;
+    background-position: right;
+    @include respond(tab-land) {
+        text-align: center;
+        background-position: center center;
+    }
+}
+.haeder__title-des {
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 10px;
+    padding-top: 12.8rem;
+}
+.header__title {
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 58px;
+    margin: 2.4rem 0;
+    @include respond(phone) {
+        font-size: 3.6rem;
+    }
+}
+.header__des {
+    width: 35rem;
+    opacity: 0.75;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 5.5rem;
+    @include respond(tab-land) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
